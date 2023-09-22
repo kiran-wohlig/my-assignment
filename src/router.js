@@ -33,16 +33,6 @@ export default new Router({
       },
     },
 
-    // {
-    //   path: "/pldetails",
-    //   name: "PlDetails",
-    //   meta: {
-    //     requiresAuth: true,
-    //   },
-    //   component: () =>
-    //     import(
-    //       "./views/PlDetailsSection/PlDetails.vue"
-    //     ),
-    // },
+    
   ],
 });
