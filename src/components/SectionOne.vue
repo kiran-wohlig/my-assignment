@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style >
+<style scoped>
 .section-one {
   font-family: Gilroy-Bold;
 }
