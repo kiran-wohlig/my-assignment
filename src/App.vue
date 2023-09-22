@@ -1,15 +1,22 @@
 <template>
   <v-app id="app">
+    <navbar-main />
+    <section-one />
+    <about-us />
+    <believe-in />
     <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-
+import AboutUs from "./components/AboutUs.vue";
+import BelieveIn from "./components/BelieveIn.vue";
+import NavbarMain from "./components/NavbarMain.vue";
+import SectionOne from "./components/SectionOne.vue";
 
 export default {
   name: "App",
-  components: {},
+  components: { NavbarMain, SectionOne, AboutUs, BelieveIn },
 };
 </script>
 
@@ -20,6 +27,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
