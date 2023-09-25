@@ -1,0 +1,170 @@
+@import "@/assets/scss/_variable";
+
+.login {
+  .login-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+   
+  }
+  .login-details {
+    background: #fff;
+    border: 1px solid #e1e6ef;
+    box-shadow: 0 1px 15px 1px rgba(113,106,202,.08)
+  }
+  background-image: url(https://source.unsplash.com/1600x900/?nature,water);
+}
+
+
+// font
+.lato {
+  font-family: $lato;
+  font-weight: normal;
+}
+.lato-bold {
+  font-family: $lato;
+  font-weight: bold;
+}
+.lato-italic {
+  font-family: $lato;
+  font-style: italic;
+}
+
+.gilroy-regular{
+  font-family: $gilroy;
+  font-weight: bold !important;
+  
+}
+.gilroy-medium{
+  font-family: $gilroymedium;
+  font-weight: 500 !important;
+
+}
+.gilroy-bold{
+  font-family: $gilroy;
+  font-weight :900 !important
+}
+
+.gilroy-semibold{
+  font-family: $gilroy;
+  font-weight: 800;
+}
+
+.font-5{
+  font-size: 30px;
+}
+.font-4{
+  font-size: 20px;
+}
+.font-3{
+  font-size: 18px;
+}
+
+.font-64{
+  font-size: 64px;
+}
+.font-48{
+  font-size: 48px;
+}
+
+//   Font Size
+.font-12 {
+  font-size: 0.75rem;
+}
+.font-14 {
+  font-size: 0.875rem;
+}
+.font-16 {
+  font-size: 1rem;
+}
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-20 {
+  font-size: 1.25rem;
+}
+.font-22 {
+  font-size: 1.375rem;
+}
+.font-24 {
+  font-size: 1.5rem;
+}
+.font-26 {
+  font-size: 1.625rem;
+}
+.font-28 {
+  font-size: 1.75rem;
+}
+.font-30 {
+  font-size: 1.875rem;
+}
+body {
+  font-family: $lato;
+  font-size: 1rem;
+}
+.bg-lightblue{
+  background-color: #0659a917;
+}
+
+// common css
+.for-desk {
+  display: block;
+}
+.for-mob {
+  display: none;
+}
+.main-heading {
+  font-size: 28px;
+  font-weight: bold;
+}
+.sub-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+.head-border {
+  border-bottom: 3px solid $primary;
+}
+.color-blue {
+  color: $primary;
+}
+.color-red{
+  color: $secondary;
+}
+.rel{
+  position: relative;
+}
+
+
+.overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// for mobile
+@media only screen and (max-width: 767px) {
+  .for-desk {
+    display: none;
+  }
+  .for-mob {
+    display: block;
+  }
+  .main-heading {
+    font-size: 22px;
+  }
+  .sub-heading {
+    font-size: 16px;
+  }
+}
+
+// for ipad pro
+@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+}
+
+// for ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+}
