@@ -1,6 +1,6 @@
 import Vue from "vue";
 import createAuth0Client from "@auth0/auth0-spa-js";
-// import router from "../router";
+import router from "../router";
 
 /** Define a default action to perform after authentication */
 const DEFAULT_REDIRECT_CALLBACK = () =>
@@ -49,7 +49,7 @@ export const useAuth0 = ({
           await this.auth0Client.handleRedirectCallback();
           this.user = await this.auth0Client.getUser();
           this.isAuthenticated = true;
-        //   this.$router.push("/my-dashboard");
+          //   this.$router.push("/my-dashboard");
         } catch (e) {
           this.error = e;
         } finally {
@@ -106,6 +106,15 @@ export const useAuth0 = ({
         this.isAuthenticated = await this.auth0Client.isAuthenticated();
         this.user = await this.auth0Client.getUser();
         this.loading = false;
+        this.accessToken = await this.getTokenSilently();
+        localStorage.setItem("auth0accessToken", this.accessToken);
+        if (!localStorage.getItem("auth0accessToken")) {
+          localStorage.removeItem("loader");
+          this.logout();
+          router.push("/");
+        } else {
+          router.push("/dashboardmain").catch(() => {});
+        }
         // router.push("/my-dashboard");
       }
     },

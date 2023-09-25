@@ -36,12 +36,12 @@
   
 }
 .gilroy-medium{
-  font-family: $gilroymedium;
+  font-family: $gilroymedium !important;
   font-weight: 500 !important;
 
 }
 .gilroy-bold{
-  font-family: $gilroy;
+  font-family: $gilroy !important;
   font-weight :900 !important
 }
 
@@ -54,11 +54,18 @@
   font-size: 30px;
 }
 .font-4{
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .font-3{
   font-size: 18px;
 }
+.font-2{
+  font-size: 14px;
+}
+.font-1{
+  font-size: 12px;
+}
+
 
 .font-64{
   font-size: 64px;

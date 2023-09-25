@@ -1,8 +1,13 @@
 <template>
-  <div class="believe-in">
+  <div class="believe-in aboutus">
     <div class="container">
       <div class="text-center mb-4">
-        <h2>We Believe In</h2>
+        <h2
+          class="gilroy-bold"
+          :class="$vuetify.breakpoint.mdAndUp ? 'font-48 mt-10' : 'font-28'"
+        >
+          We Believe In
+        </h2>
       </div>
       <div class="row">
         <v-col md="3" sm="">
@@ -16,8 +21,18 @@
                 src="@/assets/images/Group1.png"
               ></v-img>
             </div>
-            <h3>Proactive</h3>
-            <p>We are a products of our choices and not circumstances</p>
+            <h3
+              class="gilroy-bold"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-5' : 'font-3'"
+            >
+              Proactive
+            </h3>
+            <p
+              class="gilroy-medium"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-4' : 'font-2'"
+            >
+              We are a products of our choices and not circumstances
+            </p>
           </div>
         </v-col>
         <v-col md="3" sm="">
@@ -31,8 +46,18 @@
               ></v-img>
             </div>
 
-            <h3>First things first</h3>
-            <p>We put important things first, not urgent</p>
+            <h3
+              class="gilroy-bold"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-5' : 'font-3'"
+            >
+              First things first
+            </h3>
+            <p
+              class="gilroy-medium"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-4' : 'font-2'"
+            >
+              We put important things first, not urgent
+            </p>
           </div>
         </v-col>
 
@@ -47,8 +72,18 @@
               ></v-img>
             </div>
 
-            <h3>End in mind</h3>
-            <p>We live by design Not "DEFAULT”</p>
+            <h3
+              class="gilroy-bold"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-5' : 'font-3'"
+            >
+              End in mind
+            </h3>
+            <p
+              class="gilroy-medium"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-4' : 'font-2'"
+            >
+              We live by design Not "DEFAULT”
+            </p>
           </div>
         </v-col>
         <v-col md="3" sm="">
@@ -62,8 +97,16 @@
               ></v-img>
             </div>
 
-            <h3>Think win-win</h3>
-            <p>
+            <h3
+              class="gilroy-bold"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-5' : 'font-3'"
+            >
+              Think win-win
+            </h3>
+            <p
+              class="gilroy-medium"
+              :class="$vuetify.breakpoint.mdAndUp ? 'font-4' : 'font-2'"
+            >
               We believe there is plenty of space for everyone & more to share
             </p>
           </div>
@@ -79,7 +122,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "src/assets/scss/main.scss";
 .about-us {
   font-family: Gilroy-Bold;
 }
